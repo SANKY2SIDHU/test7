@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         highScoreTxt.setText("HIGHSCORE : "+prefs.getInt("highscore",0));
 
     }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+    }
 }
